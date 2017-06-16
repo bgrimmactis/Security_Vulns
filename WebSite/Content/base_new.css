@@ -1,0 +1,117 @@
+/**********************************************************************************************************************Project: Security Scan Results DisplayCreated by:  Barbara Grimm ActisDate:  6/15/2017Function:  This style sheet contains the basic styles for standard elements in the security scan results application.**********************************************************************************************************************/
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #002E5A;
+  font-size: 24px;
+  margin-bottom: 0px;
+}
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1E78C1;
+  font-size: 18px;
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  font-size: 16px;
+  margin: 0px;
+  padding: 0px;
+}
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #A9A9AC;
+  font-size: 14px;
+  margin: 5px;
+  padding: 0px;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  color: #000000;
+  font-size: 12px;
+}
+/* This is ol ul specific */
+{
+	/* ol: numbered lists */
+	list-style-type: decimal;
+	line-height: 150%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+ul
+{
+	/* ul: bullet lists */
+	list-style-type: square;
+	line-height: 150%;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+	margin-right: 0px;
+	padding-left: 0px;
+}
+ol ul
+{
+	/* second level bullet lists */
+	list-style-type: square;  //disc
+	margin-bottom: 10px;
+}
+/* End of ol ul specific */
+/* Styles specific to Application */
+.h1white {  font-family: Arial, Helvetica, sans-serif;  color: #ffffff;  font-size: 24px;    font-weight: bold;  margin: 10px;}
+.outerGridContainer {
+    margin:auto; 
+    width:1250px;
+    text-align:center;
+}
+.innerGridContainer {
+    text-align:left;
+}
+.scanResultsXtraFieldsContainer {
+    border-width:1px; 
+    border-color:#1e78c1; 
+    border-style:solid; 
+    width:1200px; 
+    height:300px;
+    float:left;
+}
+.xtraFieldsTable {
+    margin:10px;
+    border-spacing:10px;
+}
+.xtraFieldsLabel {
+    font-weight:bold;
+    text-align:right;
+}
+.scanFooter {
+    float:left;
+    margin-top: 10px;	    text-align:center;
+    bottom:0;	width: 100%;
+    height:20px;
+    background:#1E78C1;
+}
+legend {
+    text-align:left;
+    font-weight:bold;
+}#bannerTable tr {
+    vertical-align:top;
+    width:25%;
+}#statusAndValuesDiv {
+    width:37%;
+    float:left;
+}
+#headerGradient {
+  background: #009CD5; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #002E5A, #009CD5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #002E5A, #009CD5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #002E5A, #009CD5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #002E5A, #009CD5); /* Standard syntax */
+}

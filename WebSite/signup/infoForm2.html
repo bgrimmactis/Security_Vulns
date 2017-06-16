@@ -1,0 +1,327 @@
+<!-- Sample scan target file.-->
+
+<!doctype html>
+<html>
+<head>
+	<title>Contact Page</title>   
+</head>
+
+<body leftmargin="0" rightmargin="0" topmargin="5" text="Black" style="font-family: Arial, Helvetica;font-size: 10pt;" link="Black">
+
+
+<!--- Main Page Layout Table --->
+<table border="0" width="770">
+
+<tr>
+	<!--- Blank "left margin spacer" cell --->
+	<td width="90"> &nbsp;</td>
+	<!--- Blank Cell --->
+	<td width="140"> &nbsp;</td>
+	<!--- Top Title --->
+	<td width="560">
+	<font size="+4" face="Perpetua"><i>CONTACT US</i></font>
+	<hr>
+	</td>
+</tr>
+
+<tr>
+
+	<!--- Blank "left margin spacer" cell --->
+	<td width="70"> &nbsp;</td>
+	
+	<td valign="top">
+	
+	<!--- Left Navigation Layout Table --->
+	
+	<!--- End Left Navigation Table --->
+	
+	</td>
+	
+	<!--- Content Area --->
+	<td width="552">
+	
+	<!--- NOTE:  Calls XO cgi script which sends email and writes to a comma-
+	delimited text file --->
+	
+	<form method="post" ACTION="/cgi-bin/form2mail">
+	
+	<input type="Hidden" name="email" value="stellabystarlight@intrigue-online.com">
+	<input type="Hidden" name="subject" value="Potential Event Inquiry">
+	<input type="Hidden" name="config" value="f2m/config.txt">
+	 
+	<table style="font-family: Arial, Helvetica, sans-serif;font-size: 10pt" border="0">
+	
+		<tr>
+			<td colspan="2"><font face="Arial" size="-1">
+			Are you planning an event with live music? &nbsp; Please 
+			fill out the form below, including as much information as possible about 
+			the event, and we will contact you as soon as possible!
+			</font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2">&nbsp </td>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><font face="Arial" size="-1">
+			For more information, please call (617)555-5555.
+			</font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2">&nbsp </td>
+		</tr>
+		
+		<tr>
+			<td colspan="2"><font color="Red" face="Arial" size="-1">
+			<i>[Note:  Fields marked with an * are required.]</i></font></td>
+		</tr>
+		
+		<tr>
+			<td colspan="2">&nbsp </td>
+		</tr>
+		
+		<tr>
+			<td width="200" align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Name:</b></font></td>
+			<td><input name="NAME_r" type="Text" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Company:</b></font></td>
+			<td><input name="COMPANY" type="Text" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Address:</b></font></td>
+			<td><input name="ADDRESS1_r" type="Text" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td>&nbsp </td>
+			<td><input name="ADDRESS2" type="Text" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>City:</b></font></td>
+			<td><input name="CITY_r" type="Text" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>State:</b></font></td>
+			<!--- <td><input name="STATE" type="Text"></td>
+		</tr>
+		
+		<TR> --->    	    
+			<td><select  name="STATE_r">
+				<option value="1">Select a state</option>
+				<option value="Alabama">Alabama</option>
+				<option value="Alaska">Alaska</option>
+				<option value="Arizona">Arizona</option>
+				<option value="Arkansas">Arkansas</option>
+				<option value="California">California</option>
+				<option value="Colorado">Colorado</option>
+				<option value="Connecticut">Connecticut</option>
+				<option value="Delaware">Delaware</option>
+				<option value="District of Columbia">District of Columbia</option>
+				<option value="Florida">Florida</option>
+				<option value="Georgia">Georgia</option>
+				<option value="Hawaii">Hawaii</option>
+				<option value="Idaho">Idaho</option>
+				<option value="Illinois">Illinois</option>
+				<option value="Indiana">Indiana</option>
+				<option value="Iowa">Iowa</option>
+				<option value="Kansas">Kansas</option>
+				<option value="Kentucky">Kentucky</option>
+				<option value="Louisiana">Louisiana</option>
+				<option value="Maine">Maine</option>
+				<option value="Maryland">Maryland</option>
+				<option value="Massachusetts">Massachusetts</option>
+				<option value="Michigan">Michigan</option>
+				<option value="Minnesota">Minnesota</option>
+				<option value="Mississippi">Mississippi</option>
+				<option value="Missouri">Missouri</option>
+				<option value="Montana">Montana</option>
+				<option value="Nebraska">Nebraska</option>
+				<option value="Nevada">Nevada</option>
+				<option value="New Hampshire">New Hampshire</option>
+				<option value="New Jersey">New Jersey</option>
+				<option value="New Mexico">New Mexico</option>
+				<option value="New York">New York</option>
+				<option value="North Carolina">North Carolina</option>
+				<option value="North Dakota">North Dakota</option>
+				<option value="Ohio">Ohio</option>
+				<option value="Oklahoma">Oklahoma</option>
+				<option value="Oregon">Oregon</option>
+				<option value="Pennsylvania">Pennsylvania</option>
+				<option value="Rhode Island">Rhode Island</option>
+				<option value="South Carolina">South Carolina</option>
+				<option value="South Dakota">South Dakota</option>
+				<option value="Tennessee">Tennessee</option>
+				<option value="Texas">Texas</option>
+				<option value="Utah">Utah</option>
+				<option value="Virginia">Virginia</option>
+				<option value="Vermont">Vermont</option>
+				<option value="Washington">Washington</option>
+				<option value="West Virginia">West Virginia</option>
+				<option value="Wisconsin">Wisconsin</option>
+				<option value="Wyoming">Wyoming</option>
+				<option value="Other">other</option>
+				</select>
+			</td>
+		</tr> 
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Country:</b></font></td>
+			<td><input name="COUNTRY_r" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>ZIP:</b></font></td>
+			<td><input name="ZIP_r" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>E-Mail:</b></font></td>
+			<td><input name="EMAIL_r" type="Text" size="30"></td>
+		</tr>
+		
+		<tr>
+			<td align="right"><font color="Red">*</font>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Phone:</b></font></td>
+			<td><input name="PHONE_r" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Fax:</b></font></td>
+			<td><input name="FAX" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Type of Event:</b></font></td>
+			<!--- <td><input name="EVENTTYPE" type="Text"></td> --->
+			<td><select  name="EVENTTYPE">
+				<option value="Wedding">Wedding</option>
+				<option value="Bar/Bat Mitzvah">Bar/Bat Mitzvah</option>
+				<option value="Corporate">Corporate</option>
+				<option value="Other">Other</option>
+				</select>
+			</td>	
+		</tr>
+		
+		<tr>
+			<td align="right"> &nbsp; </td>
+			<td>
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			Other: &nbsp;</font>
+			<!--- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ---> <input name="OTHEREVENT" type="Text">
+			</td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Event Date:</b></font></td>
+			<td><input name="EVENTDATE" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Event Location:</b></font></td>
+			<td><input name="EVENTLOCATION" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Event Time:</b></font></td>
+			<td><input name="EVENTTIME" type="Text"></td>
+		</tr>
+		
+		<tr>
+			<td align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Send Info Packet:</b></font></td>
+			<td><input name="SENDINFO" type="Checkbox" value="Send Info Packet"></td>
+		</tr>
+		
+		<tr>
+			<td valign="top" align="right">
+			<font face="Arial, Helvetica, sans-serif" size="-1">
+			<b>Comments:</b></font></td>
+			<td><textarea name="COMMENTS" cols="42" rows="6"></textarea></td>
+		</tr>
+		
+		<tr>
+			<td>&nbsp </td>
+			<td><input name="SUBMIT" type="Submit" value="Submit"></td>
+		</tr>
+	</table>
+
+	</form>
+
+	<hr>
+	
+	</td>
+
+</tr>
+
+<!--- Footer Links --->
+<tr>
+	
+	<!--- Blank "left margin spacer" cell --->
+	<td width="70"> &nbsp;</td>
+	<!--- Blank Cell --->
+	<td width="140"> &nbsp;</td>
+	
+	<td width="560" style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;" align="center">
+	
+	<br>
+	
+	<a href=home.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Home</a> | 
+	<a href=AboutIntrigue.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">About Intrigue</a> | 
+	<a href=SongList.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Song List</a> | 
+	<a href=MusicSamples.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Music Samples</a> |
+	<a href=Testimonials.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Testimonials</a> 
+	
+	<br>
+		
+	<a href=ClientList.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Client List</a> | 
+	<a href=Calendar.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Calendar</a> | 
+	<a href=PhotoGallery.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Photo Gallery</a> |
+	<a href=ContactUs.htm style="color:White;font-family:Arial, Helvetica, sans-serif;font-size: 10pt;">Contact Us</a>
+	
+	</td>
+	
+</tr>
+
+</table>
+<!--- End Main Page Layout Table --->
+
+<br>
+
+
+</body>
+</html>

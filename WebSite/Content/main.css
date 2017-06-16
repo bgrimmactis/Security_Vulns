@@ -1,0 +1,38 @@
+﻿/**********************************************************************************************************************
+Project: Security Scan Results Display
+Created by:  Barbara Grimm Actis
+Date:  6/15/2017
+Function:  This is the stylesheet that controls the ui-grid styles.
+**********************************************************************************************************************/
+
+.grid {
+  width: 1200px;
+  height: 250px;
+}
+
+.ui-grid-row:nth-child(odd) .ui-grid-cell {
+  background-color: #ffffff;
+}
+.ui-grid-row:nth-child(even) .ui-grid-cell {
+  background-color: #ccf1ff;
+} 
+.ui-grid-cell-focus {
+  outline: 0;
+  background-color: #99e4ff;
+}
+
+.ui-grid-row-selected.ui-grid-row:nth-child(odd) .ui-grid-cell,
+.ui-grid-row-selected.ui-grid-row:nth-child(even) .ui-grid-cell {  color: #000;
+  background-color: #80ddff;
+} 
+
+.ui-grid-row-selected.ui-grid-row:nth-child(odd) .ui-grid-cell.ui-grid-cell-focus,
+.ui-grid-row-selected.ui-grid-row:nth-child(even) .ui-grid-cell.ui-grid-cell-focus {
+  outline: 0;
+  background-color: #80ddff;
+} 
+.ui-grid-row-selected.ui-grid-row:nth-child(odd):hover .ui-grid-cell,
+.ui-grid-row-selected.ui-grid-row:nth-child(even):hover .ui-grid-cell {
+  color: #000;
+  background-color: #80ddff;
+} 

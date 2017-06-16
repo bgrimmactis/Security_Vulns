@@ -1,0 +1,42 @@
+﻿<!--*********************************************************************************************************************Project: Security Scan Results DisplayCreated by:  Barbara Grimm ActisDate:  6/15/2017Function:  This file contains the main user interface of the Security Scan Results Display.**********************************************************************************************************************--><!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/csv.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/pdfmake.js"></script>
+    <script src="http://ui-grid.info/docs/grunt-scripts/vfs_fonts.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="Content/main.css" type="text/css">
+    <link rel="stylesheet" href="Content/base_new.css" type="text/css">
+    <script src="ViewModels/app.js"></script>
+</head>
+<body>
+    <!-- Include Application Header -->
+    <div ng-include="'VHeader.html'"></div>
+    <!-- Outer container for Grid. -->
+    <div class="outerGridContainer">
+        <h1>Security Scan Results</h1>
+        <div ng-controller="MainCtrl" class="innerGridContainer">
+            <!-- Code container for the grid itself. -->			<div id="grid1" ui-grid="gridOptions" ui-grid-selection class="grid" ng-model="grid1"></div>
+            <br>
+            <!-- Code for the additional fields displayed after user selects a vulnerability from the grid. -->			<div class="scanResultsXtraFieldsContainer">
+                <table class="xtraFieldsTable">
+                    					<h4>Additional Information</h4>															<tr>                        <td class="xtraFieldsLabel">CWE:</td>                        <td>{{ CWE }}</td>                    </tr>										<tr>
+                        <td class="xtraFieldsLabel">CWE Link:</td>
+                        <td><a href="{{ CWELink }}" target="_blank">{{ CWELink }}</a></td>
+                    </tr>
+                    <tr>
+                        <td class="xtraFieldsLabel">Preview Page:</td>
+                        <td><a href="{{ BaseURL }}" target="_blank">{{ BaseURL }}</a></td>
+                    </tr>										<tr>                        <td class="xtraFieldsLabel">Code Snippet:</td>                        <td><img src="{{ Preview }}"></td>                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- Include Application Footer -->
+    <div class="scanFooter" ng-include="'VFooter.html'"></div>    
+</body>
+</html>
